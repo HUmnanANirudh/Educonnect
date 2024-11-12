@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduConnects - Lectures</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1b1b2f;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: linear-gradient(90deg, #7900C3, #590090, #000000);
+      color: #fff;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #131329;
+      padding: 20px;
+    }
+
+    .profile-section {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile-section img {
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+    }
+
+    .profile-section h3 {
+      margin-top: 10px;
+    }
+
+    .profile-section p {
+      color: #a5a5a5;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .nav-links li {
+      margin-bottom: 15px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      padding: 10px;
+      background-color: #2d2d44;
+      border-radius: 8px;
+    }
+
+    .nav-links li a:hover {
+      background-color: #3e3e5a;
+    }
+
+    .content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    .content h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      color: #a5a5a5;
+      margin-bottom: 30px;
+    }
+
+    .lecture-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .lecture-item {
+      padding: 15px;
+      background-color: #2d2d44;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+    }
+
+    .lecture-item:hover {
+      background-color: #3e3e5a;
+    }
+
+    .lecture-item::before {
+      content: '▶';
+      margin-right: 15px;
+      color: #ff6f91;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">EduConnects</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Lectures</a></li>
+        <li><a href="#">Notes</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile-section">
+        <img src="https://via.placeholder.com/50" alt="User Image">
+        <h3>Aparna Singh</h3>
+        <p>Student</p>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Subjects</a></li>
+        <li><a href="#">Lectures</a></li>
+        <li><a href="#">Notes</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Password and Security</a></li>
+        <li><a href="#">Sign Out</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <h1>Lectures</h1>
+      <p>Class > Subject > Lectures</p>
+      <div class="lecture-list">
+        <div class="lecture-item">Lecture 1</div>
+        <div class="lecture-item">Lecture 2</div>
+        <div class="lecture-item">Lecture 3</div>
+        <div class="lecture-item">Lecture 4</div>
+        <div class="lecture-item">Lecture 5</div>
+        <div class="lecture-item">Lecture 6</div>
+        <div class="lecture-item">Lecture 7</div>
+        <div class="lecture-item">Lecture 8</div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

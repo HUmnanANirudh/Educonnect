@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduConnects - Notes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #0D0B21;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: linear-gradient(90deg, #7900C3, #590090, #000000);
+      color: #fff;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .icon-container img {
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #131329;
+      padding: 20px;
+    }
+
+    .profile-section {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile-section img {
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+    }
+
+    .profile-section h3 {
+      margin-top: 10px;
+    }
+
+    .profile-section p {
+      color: #a5a5a5;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .nav-links li {
+      margin-bottom: 15px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      padding: 10px;
+      background-color: #2d2d44;
+      border-radius: 8px;
+    }
+
+    .nav-links li a:hover {
+      background-color: #3e3e5a;
+    }
+
+    .content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    .content h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      color: #a5a5a5;
+      margin-bottom: 30px;
+    }
+
+    .note-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .note-item {
+      padding: 15px;
+      background-color: #2d2d44;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+    }
+
+    .note-item:hover {
+      background-color: #3e3e5a;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">EduConnects</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Lectures</a></li>
+        <li><a href="#">Notes</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Support</a></li>
+        <!-- Adding icons next to navigation links -->
+        <div class="icon-container">
+          <img src="img1.png" alt="Icon 1">
+          <img src="img2.png" alt="Icon 2">
+          <img src="img3.png" alt="Icon 3">
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile-section">
+        <img src="https://via.placeholder.com/50" alt="User Image">
+        <h3>Aparna Singh</h3>
+        <p>Student</p>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Subjects</a></li>
+        <li><a href="#">Lectures</a></li>
+        <li><a href="#">Notes</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Password and Security</a></li>
+        <li><a href="#">Sign Out</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <h1>Notes</h1>
+      <p>Class > Subject > Notes</p>
+      <div class="note-list">
+        <div class="note-item">Note 1</div>
+        <div class="note-item">Note 2</div>
+        <div class="note-item">Note 3</div>
+        <div class="note-item">Note 4</div>
+        <div class="note-item">Note 5</div>
+        <div class="note-item">Note 6</div>
+        <div class="note-item">Note 7</div>
+        <div class="note-item">Note 8</div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

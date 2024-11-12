@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduConnects - Lecture 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #141625;
+            color: white;
+            overflow: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #7900C3, #590090, #000000);
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 26.74px;
+            transition: color 0.3s ease;
+        }
+
+       
+        .container {
+            display: flex;
+            height: calc(100vh - 80px);
+        }
+
+        .sidebar {
+            width: 270px;
+            background-color: #1f2334;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; 
+            height: 100vh; 
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 10px;
+
+        }
+
+        .profile h2 {
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+
+        .profile p {
+            margin: 0;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .nav-links li {
+            margin: 10px 0;
+        }
+
+        .nav-links a {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 8px;
+            color: #ffffff;
+            text-decoration: none;
+            background-color: #232642;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background-color: #343a55;
+        }
+
+        .nav-links a img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        main {
+            flex: 1;
+            padding: 30px;
+            background-color: #1b1e31;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .lecture-title {
+            font-size: 100px;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .lecture-b {
+            text-align: left;
+            margin-bottom: 20px;
+            color: #bbb;
+        }
+
+        .video-container {
+            position: relative;
+            background-color: #000000; 
+            border-radius: 10px;
+            padding: 40px;
+            margin: 0 auto;
+            width: 80%; 
+            height:100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-placeholder {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            color: #ffffff;
+            background-color: rgba(155, 0, 255, 0.8);
+            border-radius: 50%;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .play-button:hover {
+            background-color: rgba(107, 0, 200, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/v13_102.png" alt="EduConnects Logo">
+            <h1>EduConnects</h1>
+        </div>
+        <nav>
+            <a href="#"><img src="/images/v82_31.png" alt="Home" style="width: 40px; height: auto;">Home</a>
+            <a href="#"><img src="/images/v82_32.png" alt="Lectures" style="width: 40px; height: auto;">Lectures</a>
+            <a href="#"><img src="/images/v82_27.png" alt="Notes" style="width: 40px; height: auto;">Notes</a>
+            <a href="#"><img src="/images/v82_30.png" alt="Profile" style="width:40px; height: auto;">Profile</a>
+            <a href="#"><img src="/images/v82_33.png" alt="Support" style="width: 40px; height: auto;">Support</a>
+        </nav>
+        
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="images/v13_89.png" alt="Aparna Singh">
+                <h2>Aparna Singh</h2>
+                <p>Student</p>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#"><img src="images/v72_4.png" alt="Profile Icon"> Profile</a></li>
+                <li><a href="#"><img src="images/v82.27.png" alt="Subjects Icon"> Subjects</a></li>
+                <li><a href="#"><img src="images/v82_32.png" alt="Lectures Icon"> Lectures</a></li>
+                <li><a href="#"><img src="images/v13_27.png" alt="Notes Icon"> Notes</a></li>
+                <li><a href="#"><img src="images/v82_30.png" alt="About Icon"> About</a></li>
+                <li><a href="#"><img src="images/" alt="Feedback Icon"> Feedback</a></li>
+                <li><a href="#"><img src="images/" alt="Support Icon"> Support</a></li>
+                <li><a href="#"><img src="images/" alt="Password and Security Icon"> Password and Security</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html"><img src="img15" alt="Sign Out Icon"> Sign Out</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <h2 class="lecture-title">Lecture 1</h2>
+            <p class="lecture-b">Class > Subject > Lectures > Lecture 1</p>
+            <div class="video-container">
+
+                <div class="play-button">▶</div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
